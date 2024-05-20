@@ -1,6 +1,7 @@
 :root {
   // base
-  --font-family-base: 'Gilroy', sans-serif, system-ui;
+  --font-family-base: 'PTSans', sans-serif;
+  --font-family-bold: 'Montserrat', sans-serif;
   // --font-family-accent: "Yantramanav", sans-serif;
   // --font-family-additional: "DMSans", sans-serif;
 
@@ -17,7 +18,7 @@
   --outline-offset: 2px;
 
   // transition
-  --timing: 0.3s;
+  --timing: 0.3s ease;
 
   // z-index-
   --preloader-z-index: 1001;
@@ -25,4 +26,11 @@
 
   // overlay
   --overlay-shadow: rgba(0, 0, 0, 0.6);
+
+  --headings-sizes-h1: 3rem;
+  --headings-sizes-h2: 2.7rem;
+  --headings-sizes-h3: 2.4rem;
+  --headings-sizes-h4: 2.1rem;
+  --headings-sizes-h5: 1.7rem;
+  --headings-sizes-h6: 1.5rem;
 }
