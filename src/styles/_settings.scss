@@ -69,6 +69,11 @@
   &:focus {
     background-color: var(--color-accent-hover);
   }
+
+  &-lg {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
 }
 
 .accent {

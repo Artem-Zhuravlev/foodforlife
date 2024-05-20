@@ -49,7 +49,9 @@
   <body class="page__body">
     <div class="site-container">
       @include('../components/header.html')
-      <main class="page__main" id="main">@include('../components/hero.html')</main>
+      <main class="page__main" id="main">
+        @include('../components/hero.html') @include('../components/achievements.html')
+      </main>
       @include('../components/footer.html')
     </div>
   </body>

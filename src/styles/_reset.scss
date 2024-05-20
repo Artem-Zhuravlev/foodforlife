@@ -72,6 +72,12 @@ h6,
 p {
   margin: 0 0 1em;
   line-height: 1.6;
+
+  strong,
+  b {
+    color: var(--color-accent);
+    font-family: var(--font-family-bold);
+  }
 }
 
 textarea {
