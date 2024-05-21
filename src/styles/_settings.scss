@@ -84,6 +84,15 @@
   font-size: 20px;
 }
 
+.section {
+  padding-top: calc(var(--offset-large) * 2);
+  padding-bottom: calc(var(--offset-large) * 2);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
 @media (prefers-reduced-motion) {
   * {
     &,

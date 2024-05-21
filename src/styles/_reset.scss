@@ -157,3 +157,8 @@ mark {
   background-color: transparent;
   color: currentColor;
 }
+
+b,
+strong {
+  font-family: var(--font-family-bold);
+}
