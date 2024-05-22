@@ -6,9 +6,11 @@
 @import 'fonts';
 @import 'settings';
 @import 'unitary-classes';
+@import 'slider';
 
 // page blocks connection
 @import './components/header';
 @import './components/hero';
 @import './components/achievements';
 @import './components/statistic';
+@import './components/volunteers';

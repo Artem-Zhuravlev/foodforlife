@@ -58,6 +58,8 @@
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
   padding: 10px 20px;
   background-color: var(--color-accent);
   color: var(--color-white);
