@@ -1,0 +1,18 @@
+.help {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--offset-small);
+  }
+
+  &__col {
+    text-align: center;
+    background-color: var(--color-accent-light);
+    padding: var(--offset-tiny);
+    border-radius: var(--offset-tiny);
+
+    img {
+      margin: 0 auto var(--offset-tiny-small);
+    }
+  }
+}
