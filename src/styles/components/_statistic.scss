@@ -2,29 +2,29 @@
   &__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: var(--offset-tiny);
   }
 
   &__col {
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-dark);
-    padding: 10px;
-    border-radius: 10px;
+    padding: var(--offset-tiny-small);
+    border-radius: var(--offset-tiny-small);
   }
 
   &__img {
-    margin-bottom: 20px;
+    margin-bottom: var(--offset-small);
     img {
-      border-radius: 10px;
+      border-radius: var(--offset-tiny-small);
     }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: var(--offset-tiny-small);
+    padding: var(--offset-tiny);
     background-color: var(--color-light);
     font-size: 16px;
     height: 100%;

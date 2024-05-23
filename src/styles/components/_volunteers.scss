@@ -1,7 +1,7 @@
 .volunteers {
   &__col {
     img {
-      margin-bottom: 20px;
+      margin-bottom: var(--offset-small);
     }
   }
 
@@ -10,9 +10,9 @@
     border: 1px solid var(--color-dark);
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: var(--offset-small);
     td {
-      padding: 10px;
+      padding: var(--offset-tiny-small);
       border: 1px solid var(--color-dark);
     }
   }

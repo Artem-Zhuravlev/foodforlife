@@ -2,7 +2,7 @@
   &__row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 15px;
+    gap: var(--offset-small) var(--offset-tiny);
   }
 
   &__col {
@@ -11,7 +11,7 @@
     align-items: center;
 
     img {
-      margin-bottom: 20px;
+      margin-bottom: var(--offset-small);
       max-width: 250px;
       border-radius: 50%;
     }

@@ -15,7 +15,7 @@
 @mixin updown {
   @keyframes updown {
     50% {
-      transform: translateY(-20px);
+      transform: translateY(var(--offset-small) * -1);
     }
 
     100% {
@@ -64,7 +64,7 @@
 @mixin pulse-btn-bg {
   @keyframes pulse-btn-bg {
     100% {
-      box-shadow: 0 0 0 20px rgba(193, 244, 246, 0);
+      box-shadow: 0 0 0 var(--offset-small) rgba(193, 244, 246, 0);
     }
   }
 }

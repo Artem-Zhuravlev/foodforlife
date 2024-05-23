@@ -1,0 +1,41 @@
+.charity {
+  &-controls {
+    display: flex;
+    margin-bottom: var(--offset-small);
+    &__btn {
+      padding: var(--offset-tiny);
+      border: 1px solid var(--color-accent);
+      font-size: 20px;
+      font-weight: 700;
+      font-family: var(--font-family-bold);
+      color: var(--color-accent);
+      transition: var(--timing);
+
+      &:first-child {
+        border-right-color: transparent;
+      }
+
+      &--active,
+      &:hover,
+      &:focus {
+        background-color: var(--color-accent);
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &-wrapper {
+    &__tab {
+      margin-bottom: var(--offset-small);
+      background-color: var(--color-dark-bg);
+      color: var(--color-white);
+      padding: var(--offset-small);
+    }
+
+    &__buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--offset-tiny);
+    }
+  }
+}

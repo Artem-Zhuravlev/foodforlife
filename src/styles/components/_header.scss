@@ -49,7 +49,7 @@
 
   &__social {
     svg {
-      max-width: 20px;
+      max-width: var(--offset-small);
     }
 
     &-link {

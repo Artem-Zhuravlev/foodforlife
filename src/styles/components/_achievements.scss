@@ -3,9 +3,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    gap: var(--offset-tiny);
+    margin-top: var(--offset-huge);
+    margin-bottom: var(--offset-huge);
   }
 
   &__icon {
@@ -51,9 +51,9 @@
 
   &__info {
     margin-top: -75px;
-    padding: 95px 15px 15px;
+    padding: 95px var(--offset-tiny) var(--offset-tiny);
     text-align: center;
-    border-radius: 15px;
+    border-radius: var(--offset-tiny);
     width: 100%;
     min-height: 250px;
     font-size: 18px;
