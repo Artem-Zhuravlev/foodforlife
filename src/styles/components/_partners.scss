@@ -1,0 +1,16 @@
+.partners {
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 15px;
+    align-items: center;
+  }
+
+  &__col {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 80%;
+    }
+  }
+}
