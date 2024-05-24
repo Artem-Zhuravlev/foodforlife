@@ -3,20 +3,32 @@
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
   min-height: calc(100dvh - 99px);
-
-  &__cite {
-    color: var(--color-accent);
-    font-weight: 700;
+  @include tablet {
+    grid-template-columns: 1fr;
+    min-height: 0;
   }
 
   &__text {
     margin-bottom: var(--offset-huge);
   }
 
+  &__info {
+    @include tablet {
+      margin-bottom: var(--offset-medium);
+    }
+
+    @include mobile {
+      margin-bottom: var(--offset-small);
+    }
+  }
+
   &__image {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include tablet {
+      justify-content: flex-start;
+    }
 
     &-wrapper {
       display: flex;
@@ -26,6 +38,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      @include tablet {
+        justify-content: flex-start;
+      }
 
       img {
         height: 100%;
@@ -34,11 +49,23 @@
         border-radius: 50%;
         overflow: hidden;
 
+        @include mobile {
+          max-width: 200px;
+          height: 200px;
+        }
+
         &:last-child {
           position: absolute;
           right: -80px;
           top: 50px;
           border: var(--offset-small) solid var(--color-light);
+          @include tablet {
+            right: auto;
+            left: 175px;
+          }
+          @include mobile {
+            left: 120px;
+          }
         }
       }
     }

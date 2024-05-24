@@ -47,6 +47,9 @@ h1,
 h2,
 .h2 {
   font-size: var(--headings-sizes-h2);
+  @include mobile {
+    font-size: var(--headings-sizes-h3);
+  }
 }
 
 h3,

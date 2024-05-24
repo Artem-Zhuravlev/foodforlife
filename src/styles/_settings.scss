@@ -90,6 +90,10 @@
 .section {
   padding-top: calc(var(--offset-large) * 2);
   padding-bottom: calc(var(--offset-large) * 2);
+  @include mobile {
+    padding-top: calc(var(--offset-medium) * 2);
+    padding-bottom: calc(var(--offset-medium) * 2);
+  }
 }
 
 .bg-white {
