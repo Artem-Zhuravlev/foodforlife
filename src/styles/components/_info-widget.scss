@@ -1,0 +1,36 @@
+.info-widget {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--color-dark);
+  border-radius: 10px;
+  padding: var(--offset-tiny);
+  margin-bottom: var(--offset-huge);
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    &--tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--color-dark);
+    transition: var(--timing) color;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-dark);
+
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }
+}

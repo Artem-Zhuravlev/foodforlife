@@ -1,0 +1,22 @@
+.articles {
+  &__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px 15px;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 15px;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+}

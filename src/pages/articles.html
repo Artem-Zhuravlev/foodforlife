@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#111111" />
     <!-- Allows you to change the color of the browser address bar and the top of the browser on mobile devices -->
-    <title>Food for life - Харьков</title>
+    <title>Homepage</title>
     <!-- The most important parameter is what will appear in the search engine, you should put as many keywords as possible in this header,unique for each page -->
     <meta name="description" content="you description" />
     <!-- It is necessary to add as many keys as possible, 70 to 120 characters is recommended,unique for each page -->
@@ -49,13 +49,9 @@
   <body class="page__body">
     <div class="site-container">
       @include('../components/header.html')
+
       <main class="page__main" id="main">
-        @include('../components/hero.html') @include('../components/achievements.html')
-        @include('../components/goal.html') @include('../components/statistic.html')
-        @include('../components/volunteers.html') @include('../components/documents.html')
-        @include('../components/stars.html') @include('../components/partners.html')
-        @include('../components/charity.html') @include('../components/help.html')
-        @include('../components/contacts.html')
+        @include('../components/articles.html') @include('../components/contacts.html')
       </main>
     </div>
   </body>

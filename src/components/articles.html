@@ -1,0 +1,22 @@
+<div class="articles section bg-white">
+  <div class="container">
+    <h1 class="h2">Статьи</h1>
+    <div class="articles__wrapper">
+      <div class="articles__row">
+        @include('./card.html') @include('./card.html') @include('./card.html') @include('./card.html')
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+      <aside class="articles__sidebar">
+        @include('./popular-posts.html') @include('./tags.html') @include('./topics.html')
+      </aside>
+    </div>
+  </div>
+</div>

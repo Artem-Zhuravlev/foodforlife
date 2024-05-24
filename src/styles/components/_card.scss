@@ -1,0 +1,31 @@
+.card {
+  &__image {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.card-small {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 15px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--color-dark-bg);
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__date {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+}

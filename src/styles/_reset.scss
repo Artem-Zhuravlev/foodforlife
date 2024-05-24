@@ -37,6 +37,15 @@ h6,
   font-family: var(--font-family-bold);
   font-weight: bold;
   margin: 0 0 0.5em;
+
+  a {
+    color: inherit;
+    transition: var(--timing) color;
+    &:hover,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }
 }
 
 h1,
