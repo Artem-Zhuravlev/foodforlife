@@ -4,6 +4,10 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--offset-small) var(--offset-tiny);
     align-items: center;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__col {
