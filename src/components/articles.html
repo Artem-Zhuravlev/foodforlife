@@ -1,7 +1,7 @@
-<div class="articles section bg-white">
+<div class="articles section bg-white" itemscope itemtype="http://schema.org/Blog">
   <div class="container">
-    <h1 class="h2">Статьи</h1>
-    <div class="articles__wrapper">
+    <h1 class="h2" itemprop="headline">Статьи</h1>
+    <div class="articles__wrapper" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
       <div class="articles__row">
         @include('./card.html') @include('./card.html') @include('./card.html') @include('./card.html')
         <nav aria-label="Page navigation example">
@@ -14,7 +14,7 @@
           </ul>
         </nav>
       </div>
-      <aside class="articles__sidebar">
+      <aside class="articles__sidebar" itemprop="hasPart" itemscope itemtype="http://schema.org/WPSideBar">
         @include('./popular-posts.html') @include('./tags.html') @include('./topics.html')
       </aside>
     </div>

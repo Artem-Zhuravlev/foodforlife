@@ -1,9 +1,9 @@
-<header class="header">
-  <a href="#" class="header__logo">
-    <img src="img/logo.png" alt="" />
+<header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <a href="#" class="header__logo" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+    <img src="img/logo.png" alt="" itemprop="contentUrl" />
   </a>
 
-  <div class="header__controls" data-menu>
+  <div class="header__controls" data-menu itemscope itemtype="http://schema.org/SiteNavigationElement">
     <nav class="header__nav">
       <ul class="header__nav-list">
         <li class="header__nav-item">
@@ -17,7 +17,7 @@
         </li>
       </ul>
     </nav>
-    <ul class="header__socials">
+    <ul class="header__socials" itemprop="potentialAction" itemscope itemtype="http://schema.org/CommunicateAction">
       <li class="header__social">
         <a href="tel:+380930872396" class="header__social-link">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -57,7 +57,7 @@
     </ul>
   </div>
   <div class="header__btns">
-    <a href="#" class="btn">Donate</a>
+    <a href="#" class="btn" itemprop="potentialAction" itemscope itemtype="http://schema.org/DonateAction">Donate</a>
     <button type="button" data-burger class="header__burger">
       <span aria-label="burger menu item"></span>
     </button>
