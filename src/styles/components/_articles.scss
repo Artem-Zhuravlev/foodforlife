@@ -18,5 +18,16 @@
     @include small-tablet {
       grid-template-columns: 1fr;
     }
+
+    &--single {
+      display: block;
+
+      p {
+        margin: 1em 0 1em;
+      }
+      img {
+        margin-bottom: 1em;
+      }
+    }
   }
 }
