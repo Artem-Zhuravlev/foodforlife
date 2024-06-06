@@ -38,7 +38,14 @@
       }
     }
 
-    &-link {
+    .current-menu-item {
+      a {
+        border-color: var(--color-dark);
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+
+    a {
       display: flex;
       padding: var(--offset-medium-large) var(--offset-tiny);
       color: var(--color-dark);
@@ -52,6 +59,21 @@
       &:focus {
         border-color: var(--color-dark);
         background-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+
+    .sub-menu {
+      position: absolute;
+      background-color: var(--color-accent-light);
+      border: 1px solid #ddbda9;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      a {
+        padding: 10px 15px;
       }
     }
   }

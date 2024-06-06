@@ -3,6 +3,8 @@
     const tableItems = document.querySelectorAll('.volunteers-table tr')
     const btn = document.querySelector('.volunteers-table__btn')
 
+    if (!tableItems.length || !btn) return
+
     tableItems.forEach((item, index) => {
       if (index >= 5) {
         item.style.display = 'none'

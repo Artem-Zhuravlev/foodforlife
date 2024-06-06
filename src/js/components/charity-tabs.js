@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const btns = document.querySelectorAll('.charity-controls__btn')
   const tabs = document.querySelectorAll('.charity-wrapper__tab')
+
+  if (!btns.length || !tabs.length) return
+
   let currentIndex = 0
 
   const updateTabsAndButtons = (index) => {
