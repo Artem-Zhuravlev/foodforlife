@@ -1,0 +1,30 @@
+.requisites {
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--offset-tiny);
+    margin-bottom: var(--offset-huge);
+
+    a {
+      color: var(--color-dark);
+    }
+
+    &__copy {
+      min-width: 35px;
+      padding: 5px;
+      background-color: var(--color-accent-light);
+      border-radius: 3px;
+      margin-left: 5px;
+
+      svg {
+        path {
+          fill: var(--color-dark);
+        }
+      }
+    }
+  }
+
+  p + h2 {
+    margin-top: var(--offset-huge);
+  }
+}
